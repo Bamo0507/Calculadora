@@ -4,6 +4,13 @@ import '@styles/global.css'
 export default {
     title: 'Pantalla de Calculadora',
     component: Screen,
+    decorators: [
+        (Story) => (
+            <div className="w-1/3 h-1/12 flex items-center justify-center bg-slate-100">
+                <Story />
+            </div>
+        ),
+    ],
     argTypes: {
         text_display: {
             control: {
@@ -17,5 +24,5 @@ const Template = (args) => <Screen {...args} />
 
 export const Default = Template.bind({})
 Default.args = {
-    text_display: '0'
+    text_display: 'ERROR'
 }

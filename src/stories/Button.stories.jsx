@@ -6,6 +6,13 @@ import '@styles/global.css'
 export default {
     title: 'Botones de Calculadora',
     component: Button,
+    decorators: [
+        (Story) => (
+            <div className="w-1/12 flex items-center justify-center bg-slate-100">
+                <Story />
+            </div>
+        ),
+    ],
     argTypes: {
         label: {
             control: {
