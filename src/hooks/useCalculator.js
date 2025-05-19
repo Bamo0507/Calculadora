@@ -80,8 +80,14 @@ export function useCalculator() {
       }
     } else if (type === 'format') {
       if (text === '+/-') {
-        const result = action(display)
-        setDisplay(result)
+        const toggled = action(display) 
+        
+        if (toggled.length <= 9) {
+            setDisplay(toggled)
+        } else {
+            setDisplay('ERROR')
+        }
+        
       } else if (text === '.') {
         if (operatorWasClicked) {
           setDisplay('0.')

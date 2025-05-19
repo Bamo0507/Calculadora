@@ -26,14 +26,14 @@ const backspace = (a) => {
 }
 
 const negate = (a) => {
-    if (a === '0') {
-        return a
-    }
+    if (a === '0') return a
+  
+    const toggled = a.startsWith('-') ? a.slice(1) : '-' + a
 
-    if (validateLength(a)) {
-        return a.startsWith('-') ? a.slice(1) : '-' + a
+    if (validateLength(toggled)) {
+      return toggled
     }
-
+  
     return 'ERROR'
 }
 
