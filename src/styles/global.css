@@ -8,24 +8,30 @@
 }
 
 :root {
-    --background-calculator: #E6D5B8;
+    --background-calculator: #E0F7FA;
 
-    --screen-bg: #FAF9F6;
-  
-    --numb-button:#F5F3E6;
-    --numb-button-hover: #E8E4D9;
-  
-    --operation-button:#A8D5BA;
-    --operation-button-hover: #82C7A5;
+    --screen-bg: #FFFFFF;
 
-    --delete-button:#FFB085;
-    --delete-button-hover: #FF9164;
+    --numb-button: #B2EBF2;
+    --numb-button-hover: #80DEEA;
 
-    --equal-button: #FF6B6B;
-    --equal-button-hover: #F24E4E;
-  
-    --format-button:#00b4d8;
-    --format-button-hover: #1560bd;
+    --operation-button: #4DD0E1;
+    --operation-button-hover: #26C6DA;
+
+    --delete-button:#00ACC1;
+    --delete-button-hover: #008B99;
+
+    --equal-button: #0097A7;
+    --equal-button-hover: #007C91;
+
+    --format-button: #006064;
+    --format-button-hover: #004D40;
+
+    --background-color: #f5f5f5;
+}
+
+.background {
+    background-color: var(--background-color);
 }
 
 #calc-screen {

@@ -1,6 +1,7 @@
 import Screen from '@components/Screen'
 import '@styles/global.css'
 
+/* eslint-disable no-unused-vars */
 export default {
     title: 'Pantalla de Calculadora',
     component: Screen,

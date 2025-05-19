@@ -5,6 +5,7 @@ import buttons from '@utils/ArithmeticButtons'
 
 import '@styles/global.css'
 
+/* eslint-disable no-unused-vars */
 export default {
     title: 'Cuerpo de Calculadora',
     component: Body,

@@ -3,6 +3,7 @@ import Button from "@components/Button"
 import '@styles/global.css'
 
 // button stories
+/* eslint-disable no-unused-vars */
 export default {
     title: 'Botones de Calculadora',
     component: Button,

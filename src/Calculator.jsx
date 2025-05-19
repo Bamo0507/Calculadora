@@ -11,7 +11,7 @@ function Calculator() {
   
   return (
     // Background
-    <div className="w-screen h-screen flex items-center justify-center bg-slate-100">
+    <div className="w-screen h-screen flex items-center justify-center background">
       {/* Calculator */}
       <Body
         digital_screen={<Screen text_display={display} />}
