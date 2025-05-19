@@ -1,0 +1,87 @@
+@import url('https://fonts.googleapis.com/css2?family=Jersey+10&display=swap');
+@import "tailwindcss";
+
+@layer base {
+    html {
+        font-family: "Jersey 10", sans-serif;
+    }
+}
+
+:root {
+    --background-calculator: #E6D5B8;
+
+    --screen-bg: #FAF9F6;
+  
+    --numb-button:#F5F3E6;
+    --numb-button-hover: #E8E4D9;
+  
+    --operation-button:#A8D5BA;
+    --operation-button-hover: #82C7A5;
+
+    --delete-button:#FFB085;
+    --delete-button-hover: #FF9164;
+
+    --equal-button: #FF6B6B;
+    --equal-button-hover: #F24E4E;
+  
+    --format-button:#00b4d8;
+    --format-button-hover: #1560bd;
+}
+
+#calc-screen {
+    background-color: var(--screen-bg);
+}
+
+button {
+    transition: all 0.3s ease;
+}
+
+button:hover {
+    cursor: pointer;
+    transform: scale(1.05);
+}
+
+#calc-body {
+    background-color: var(--background-calculator);
+}
+
+.arithmetic {
+    background-color: var(--operation-button);
+}
+
+.arithmetic:hover {
+    background-color: var(--operation-button-hover);
+}
+
+.interaction {
+    background-color: var(--delete-button);
+}
+
+.interaction:hover {
+    background-color: var(--delete-button-hover);
+}
+
+.number {
+    background-color: var(--numb-button);
+}
+
+.number:hover {
+    background-color: var(--numb-button-hover);
+}
+
+.equals {
+    background-color: var(--equal-button);
+}
+
+.equals:hover {
+    background-color: var(--equal-button-hover);
+}
+
+.format {
+    background-color: var(--format-button);
+    color: white;
+}
+
+.format:hover {
+    background-color: var(--format-button-hover);
+}
